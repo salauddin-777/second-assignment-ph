@@ -19,6 +19,11 @@
   font-style: normal;
 }
 
+/* Shared Style */
+.hide{
+    display: none;
+}
+
 
 
 
@@ -34,6 +39,7 @@
     padding: 0px;
     width: 1140px;
     margin: 0 auto;
+    margin-top: 30px;
 }
 .nav-content ul{
     display: flex;
@@ -66,4 +72,31 @@
     font-weight: 400;
     font-size: 1rem;
     color: rgb(0, 0, 0);
+}
+/* Nav Section style end */
+
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+    /* Nav Section responsive start */
+    .nav-bar{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 146;
+        padding: 10px;
+    }
+    .nav-content{
+        display: none;
+    }
+    .nav-cart{
+        margin-top: 35px;
+    }
+    /* Nav section responsive end */
+
 }
