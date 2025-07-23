@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 /* Google Fonts */
 
 /* Noto Serif */
@@ -45,8 +49,6 @@
     color: rgb(255, 255, 255);
     font-size: 1rem;
     font-weight: 600;
-    align-self: stretch;
-    flex-grow: 0;
     margin: 30px 0px;
     border: none;
     width: 270px;
@@ -106,15 +108,20 @@
 /* Banner Section style Start */
 .banner-container{
     display: flex;
-    width: 1140px;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     padding-top: 106px;
     margin-top: 114px;
+    /* flex-wrap: wrap; */
+    max-width: 1140px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
 }
 .banner-title{
-    font-size: 4rem;
+    font-size: 3.8rem;
     font-weight: 700;
     color: rgb(0, 0, 0);
     margin: 0;
@@ -123,10 +130,23 @@
 .banner-des{
     margin: 0;
 }
+/* .banner-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+} */
+
+
+
 /* Banner Section style end */
 
 /* Plants and Cards section style start */
-
+.plants-content{
+    max-width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+}
 .plants-content{
     text-align: center;
     margin-top: 120px;
@@ -154,6 +174,11 @@
     color: rgb(17, 17, 17);
     margin: 0;
 }
+.card-items img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    }
 
 
 
@@ -183,6 +208,38 @@
         width: 100%;
     }
     .banner-content{
-        padding: 16px;
+        margin:5px;
     }
+    .banner-title{
+        padding: 2px;
+    }
+    .banner-img img {
+        width: 100%;
+        height: auto;
+        display: block;
+        max-width: 100%;
+}
+    /* Banner Section responsive end */
+
+    /* Plants section and card responsive start */
+    .card-item {
+        grid-template-columns: repeat(2, 1fr);
+        width: calc(( 100% - 20px));
+    }
+    .card-items{
+        position: static;
+        width: calc(( 100% - 20px));
+        margin: 0 auto;
+    }
+    .card-items img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .card-items .btn {
+        width: 100%;
+        padding: 26px 10px ;
+    }
+    
 }
