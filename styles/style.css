@@ -23,6 +23,9 @@
   font-style: normal;
 }
 
+.body{
+    background-color: #f3f6fb;
+}
 /* Shared Style */
 .hide{
     display: none;
@@ -178,7 +181,143 @@
     width: 100%;
     height: auto;
     max-width: 100%;
-    }
+}
+
+/* Plants Lover Section Style start*/
+
+.plants-lover{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    max-width: 1140px;
+    gap: 60px;
+    margin-top: 210px;
+    
+}
+.plants-lover-title{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* .trust-badge{
+    position: relative;
+    margin: 0 auto;
+}
+.trust-badge img{
+    
+    position: absolute;
+    right: 700px;
+    top: -100px;
+    width: 286px;
+    height: 286px;
+    margin: 0 auto;
+} */
+.trust-badge {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.trust-badge img {
+    position: absolute;
+    right: 46%;
+    top: -100px;
+    width: 286px;
+    height: auto;
+    max-width: 100%;
+    transform: translateX(5px);
+    z-index: 10;
+}
+/* Plans Lover Section End */
+
+/* Latest Deal Section style start*/
+.promo-section {
+  padding: 40px 16px;
+
+}
+.promo-text{
+    text-align: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.promo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.promo-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  min-width: 250px;
+}
+
+.promo-card {
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  color: white;
+  padding: 20px;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 160px;
+  overflow: hidden;
+}
+
+.promo-card.large {
+  flex: 2;
+  background-image:url(../assets/deal-zabo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.promo-card.small {
+  height: 160px;
+}
+
+.promo-text h3 {
+  margin: 5px 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+#zabo{
+    font-size: 3.5rem;
+}
+.shop-btn-zabo{
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.promo-btn {
+  color: white;
+}
+
+.discount {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: orangered;
+  padding: 4px 8px;
+  font-weight: bold;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
 
 
 
@@ -236,10 +375,28 @@
         height: auto;
         max-width: 100%;
     }
-
     .card-items .btn {
         width: 100%;
         padding: 26px 10px ;
+    }
+    /* Plants Lover section responsive start */
+    .trust-badge{
+        display: none;
+    }
+    .plants-lover{
+        flex-direction: column;
+    }
+    .plants-lover img{
+        width: 100%;
+    }
+    .plants-lover-title{
+        width: 100%;
+        margin-left: 20px;
+    }
+    /* Plants Lover section responsive end */
+
+    .promo-grid{
+        flex-direction: column;
     }
     
 }
