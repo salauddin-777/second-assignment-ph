@@ -303,7 +303,7 @@ body{
   font-size: 1rem;
 }
 
-/* Join Section Style */
+/* Join Section Style start */
 .join{
     background-image: url(../assets/news-letter-bg.png);
     background-repeat: no-repeat;
@@ -324,6 +324,7 @@ body{
     background-color: rgb(255, 255, 255);
     font-weight: 400;
     font-size: 1rem;
+    border: none;
 }
 .subscribe{
     background: rgb(233, 90, 8);
@@ -332,6 +333,37 @@ body{
     font-size: 1rem;
     font-weight: 600;
     border: none;
+}
+/* Join Section Style end */
+
+/* Footer section style start */
+.footer{
+    display: flex;
+    width: 1120px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.footer-first{
+    width: 360px;
+}
+.footer ul li{
+    list-style: none;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.footer ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;  
+    color: rgb(107, 114, 128);
+}
+.footer-four img{
+    margin-left: 24px;
+}
+.footer-four{
+    align-items: center;
+
 }
 
 
@@ -402,6 +434,10 @@ body{
     .trust-badge{
         display: none;
     }
+    .plants-lover-content{
+        padding: 10px;
+        width: 90%;
+    }
     .plants-lover{
         flex-direction: column;
     }
@@ -410,7 +446,7 @@ body{
     }
     .plants-lover-title{
         width: 100%;
-        margin-left: 20px;
+        
     }
     /* Plants Lover section responsive end */
 
@@ -433,7 +469,21 @@ body{
     }
     .join-container{
         padding: 10px;
+        padding-bottom: 50px;
         text-align: center;
+    }
+    .footer{
+        flex-direction: column;
+        width: 100%;
+        padding-left: 10px;
+    }
+    .footer-first{
+        padding-left: 10px;
+        width: 90%;
+    }
+    .footer-second,
+    .footer-third{
+        width: 80%;
     }
     
 }
