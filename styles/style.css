@@ -58,11 +58,11 @@ body{
     cursor: pointer;
 }
 
-
-
-
-
-
+/* Keyframe */
+@keyframes rotate {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
 
 /* Navbar Section Style Start */
 
@@ -203,24 +203,11 @@ body{
 .plants-lover-img{
     width: 540px;
 }
-
-/* .trust-badge{
-    position: relative;
-    margin: 0 auto;
-}
-.trust-badge img{
-    
-    position: absolute;
-    right: 700px;
-    top: -100px;
-    width: 286px;
-    height: 286px;
-    margin: 0 auto;
-} */
 .trust-badge {
     position: relative;
     width: 100%;
     height: auto;
+    
 }
 
 .trust-badge img {
@@ -231,7 +218,7 @@ body{
     height: auto;
     max-width: 100%;
     transform: translateX(5px);
-    z-index: 10;
+    animation: rotate 6s ease-in-out 0.1s infinite;
 }
 /* Plans Lover Section End */
 
@@ -468,7 +455,7 @@ body{
         margin-left: 12px;
     }
     .join-container input[type = "email"]{
-        padding: 8px 20px;
+        padding: 8px 15px;
     }
     .subscribe{
         padding: 8px 20px ;
