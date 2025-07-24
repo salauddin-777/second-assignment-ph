@@ -215,9 +215,6 @@ body{
     right: 47%;
     top: -100px;
     width: 286px;
-    height: auto;
-    max-width: 100%;
-    transform: translateX(5px);
     animation: rotate 6s ease-in-out 0.1s infinite;
 }
 /* Plans Lover Section End */
