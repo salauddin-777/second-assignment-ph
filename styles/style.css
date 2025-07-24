@@ -23,7 +23,7 @@
   font-style: normal;
 }
 
-.body{
+body{
     background-color: #f3f6fb;
 }
 /* Shared Style */
@@ -232,16 +232,19 @@
 /* Plans Lover Section End */
 
 /* Latest Deal Section style start*/
+.latest-deal{
+    text-align: center;
+    margin-top: 130px;
+}
+/* Promo Section Style start */
 .promo-section {
   padding: 40px 16px;
-
 }
 .promo-text{
     text-align: center;
     justify-content: center;
     padding: 40px;
 }
-
 .promo-grid {
   display: flex;
   flex-wrap: wrap;
@@ -249,7 +252,6 @@
   max-width: 1140px;
   margin: 0 auto;
 }
-
 .promo-left {
   display: flex;
   flex-direction: column;
@@ -257,7 +259,6 @@
   flex: 1;
   min-width: 250px;
 }
-
 .promo-card {
   background-size: cover;
   background-position: center;
@@ -270,7 +271,6 @@
   min-height: 160px;
   overflow: hidden;
 }
-
 .promo-card.large {
   flex: 2;
   background-image:url(../assets/deal-zabo.png);
@@ -279,11 +279,9 @@
   background-size: cover;
   
 }
-
 .promo-card.small {
   height: 160px;
 }
-
 .promo-text h3 {
   margin: 5px 0;
   font-size: 1.25rem;
@@ -297,26 +295,47 @@
     font-size: 1.8rem;
     color: white;
 }
-
 .promo-btn {
   color: white;
 }
-
 .discount {
   font-weight: 700;
   font-size: 1rem;
 }
 
-.badge {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background-color: orangered;
-  padding: 4px 8px;
-  font-weight: bold;
-  border-radius: 4px;
-  font-size: 0.9rem;
+/* Join Section Style */
+.join{
+    background-image: url(../assets/news-letter-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
 }
+.join-container{
+    padding: 200px 300px;
+    text-align: center;
+}
+.join-title{
+    color: white;
+}
+.join-container input[type = "email"]{
+    background-color: ;
+    padding: 15px 450px 15px 20px;
+    background-color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 1rem;
+}
+.subscribe{
+    background: rgb(233, 90, 8);
+    padding: 15px 50px;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+}
+
+
+
 
 
 
@@ -397,6 +416,24 @@
 
     .promo-grid{
         flex-direction: column;
+    }
+    .latest-deal{
+        padding: 10px;
+    }
+    .join{
+        width: 95%;
+        align-items: center;
+        margin-left: 12px;
+    }
+    .join-container input[type = "email"]{
+        padding: 8px 20px;
+    }
+    .subscribe{
+        padding: 8px 20px ;
+    }
+    .join-container{
+        padding: 10px;
+        text-align: center;
     }
     
 }
